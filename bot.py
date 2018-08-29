@@ -26,4 +26,4 @@ if __name__ == "__main__":
             exc = '(): ()'.format(type(e).__name__. e)
             print('Failed to load extension {}\n{}'.format(extension, exc))
  
-bot.run("env_bot_token")
+bot.run(os.getenv('TOKEN'))
